@@ -1,5 +1,5 @@
 from pathlib import Path
-with open(Path('inputs/day1.txt')) as f:
+with open(Path('2019/inputs/day01.txt')) as f:
     masses = [int(mass) for mass in f.read().splitlines()]
 
 

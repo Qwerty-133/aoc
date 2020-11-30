@@ -21,11 +21,13 @@ def validate(password, pattern):
     return True
 
 
-with open(Path('inputs/day04.txt')) as f:
+with open(Path('2019/inputs/day04.txt')) as f:
     lower, upper = (int(num) for num in f.read().rstrip().split('-'))
 
     print(sum(validate(password, r'(\d)\1')
               for password in range(lower, upper+1)))
+
+    # Part Two
 
     print(sum(validate(password, r'(\d)(?<!\1\1)\1(?!\1)')
               for password in range(lower, upper+1)))

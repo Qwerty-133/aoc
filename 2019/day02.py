@@ -1,7 +1,7 @@
 import itertools
 from pathlib import Path
 
-with open(Path('inputs/day02.txt')) as f:
+with open(Path('2019/inputs/day02.txt')) as f:
     intcode = [int(num) for num in f.read().split(',')]
 
 

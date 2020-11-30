@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-file = Path('inputs/day03.txt')
+file = Path('2019/inputs/day03.txt')
 
 
 def generate(wire):
