@@ -14,7 +14,7 @@ from pathlib import Path
 
 input_file_name =  Path(__file__).with_suffix('.txt').name
 with open(Path('2020/inputs') / input_file_name) as f:
-    f.read()
+    data = [int(num) for num in f.read().splitlines()]
 
 
 def func():
