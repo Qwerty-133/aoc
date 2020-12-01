@@ -10,9 +10,12 @@ except ValueError:
     new_day = 1
 
 code = """\
+import collections, datetime, decimal, difflib, fractions, functools, \\
+        itertools, math, operator, random, re, statistics, string
+
 from pathlib import Path
 
-input_file_name =  Path(__file__).with_suffix('.txt').name
+input_file_name = Path(__file__).with_suffix('.txt').name
 with open(Path('2020/inputs') / input_file_name) as f:
     data = [int(num) for num in f.read().splitlines()]
 
